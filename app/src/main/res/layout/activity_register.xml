@@ -8,99 +8,105 @@
 
     <ImageView
         android:id="@+id/cashFlowIconImg"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="208dp"
+        android:layout_height="143dp"
         android:layout_marginTop="50dp"
         android:src="@drawable/logo_cash"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/titleApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Finance Records"
+        android:layout_marginTop="12dp"
         android:fontFamily="sans-serif-black"
-        android:textSize="30dp"
+        android:text="Finance Records"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/cashFlowIconImg"
+        android:textSize="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/cashFlowIconImg" />
+
     <TextView
         android:id="@+id/titleSection"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Register"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-black"
-        android:textSize="20dp"
+        android:text="Register"
         android:textColor="#707070"
-        app:layout_constraintTop_toBottomOf="@+id/titleApp"
+        android:textSize="20dp"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/titleApp" />
 
     <EditText
         android:id="@+id/formUsernameRegist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/titleSection"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="10dp"
         android:hint="Username"
-        />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleSection" />
 
     <EditText
         android:id="@+id/formPasswordRegist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/formUsernameRegist"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
         android:hint="Password"
         android:inputType="textPassword"
-        />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formUsernameRegist" />
 
     <EditText
         android:id="@+id/formPasswordConfirmRegist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/formPasswordRegist"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
         android:hint="Password Confirmation"
         android:inputType="textPassword"
-        />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formPasswordRegist" />
 
     <Button
         android:id="@+id/btnLoginOnRegist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
         android:text="Login"
-        app:layout_constraintLeft_toRightOf="@id/btnRegisterOnRegist"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/formPasswordConfirmRegist" />
+        app:layout_constraintEnd_toStartOf="@+id/btnRegisterOnRegist"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formPasswordConfirmRegist" />
 
     <Button
         android:id="@+id/btnRegisterOnRegist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="Register"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/btnLoginOnRegist"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#FFC107"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnLoginOnRegist"
         app:layout_constraintTop_toBottomOf="@id/formPasswordConfirmRegist" />
 
 </android.support.constraint.ConstraintLayout>

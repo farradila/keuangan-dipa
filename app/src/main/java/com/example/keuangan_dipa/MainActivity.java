@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Cursor cursor, cursor2;
     TextView editPengeluaran, editPemasukan;
     ImageView imgSetting,tambahPemasukan,tambahPengeluaran,dataKeuangan;
+    Button logout;
 
     private String formatRupiah(Double number){
         Locale localeID = new Locale("in", "ID");
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         editPemasukan = (TextView)findViewById(R.id.editPemasukan);
         editPengeluaran = (TextView)findViewById(R.id.editPengeluaran);
         imgSetting = (ImageView)findViewById(R.id.settingImage);
+        logout = (Button)findViewById(R.id.buttonLogout);
 
         SQLiteDatabase db = database.getReadableDatabase();
         cursor = db.rawQuery("SELECT * FROM keuangan WHERE kategori = 'Pemasukan'", null);
@@ -103,6 +107,20 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,Setting.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+
+        // logout
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Boolean updateSes = database.updateSession("kosong",1);
+                if(updateSes == true){
+                    Toast.makeText(getApplicationContext(), "Sukses Logout",Toast.LENGTH_SHORT).show();
+                    Intent loginIntent = new Intent(MainActivity.this,Login.class);
+                    startActivity(loginIntent);
+                    finish();
+                }
             }
         });
     }

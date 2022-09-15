@@ -76,8 +76,8 @@
 
     <Button
         android:id="@+id/btnSimpanPengeluaran"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="383dp"
+        android:layout_height="53dp"
         android:layout_marginTop="20sp"
         android:backgroundTint="#4CAF50"
         android:text="Simpan"
@@ -87,14 +87,13 @@
 
     <Button
         android:id="@+id/btnKembaliKeMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="382dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#D39327"
-        android:text=" << Kembali"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:text="Kembali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnSimpanPengeluaran" />
 
 </android.support.constraint.ConstraintLayout>

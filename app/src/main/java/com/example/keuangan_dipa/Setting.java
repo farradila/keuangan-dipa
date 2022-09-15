@@ -22,7 +22,7 @@ public class Setting extends AppCompatActivity {
         buttonKembali = (Button)findViewById(R.id.btnBackToMenu);
         oldPass = (EditText)findViewById(R.id.formPasswordLama);
         newPass = (EditText)findViewById(R.id.formPasswordBaru);
-        logout = (Button)findViewById(R.id.btnLogoutFromSetting);
+//        logout = (Button)findViewById(R.id.btnLogoutFromSetting);
 
         // back to menu
         buttonKembali.setOnClickListener(new View.OnClickListener() {
@@ -34,19 +34,19 @@ public class Setting extends AppCompatActivity {
             }
         });
 
-        // logout
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Boolean updateSes = database.updateSession("kosong",1);
-                if(updateSes == true){
-                    Toast.makeText(getApplicationContext(), "Sukses Logout",Toast.LENGTH_SHORT).show();
-                    Intent loginIntent = new Intent(Setting.this,Login.class);
-                    startActivity(loginIntent);
-                    finish();
-                }
-            }
-        });
+//        // logout
+//        logout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Boolean updateSes = database.updateSession("kosong",1);
+//                if(updateSes == true){
+//                    Toast.makeText(getApplicationContext(), "Sukses Logout",Toast.LENGTH_SHORT).show();
+//                    Intent loginIntent = new Intent(Setting.this,Login.class);
+//                    startActivity(loginIntent);
+//                    finish();
+//                }
+//            }
+//        });
 
         buttonGantiPassword.setOnClickListener(new View.OnClickListener() {
             @Override

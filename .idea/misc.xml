@@ -4,14 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1965" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_detail_cashflow.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_detail_cashflow.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_list_cashflow.xml" value="0.20244565217391305" />
         <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_register.xml" value="0.18" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_setting.xml" value="0.33" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_tambah_pemasukan.xml" value="0.20244565217391305" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_tambah_pengeluaran.xml" value="0.5" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_setting.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_tambah_pemasukan.xml" value="0.5" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/activity_tambah_pengeluaran.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/keuangandipa/app/src/main/res/layout/singledata.xml" value="0.33" />
       </map>
     </option>

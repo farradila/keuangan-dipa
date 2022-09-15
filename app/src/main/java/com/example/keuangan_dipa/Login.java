@@ -23,6 +23,7 @@ public class Login extends AppCompatActivity {
         username = (EditText) findViewById(R.id.formUsername);
         password = (EditText) findViewById(R.id.formPassword);
         login = (Button) findViewById(R.id.btnLoginOnLogin);
+        register = (Button)findViewById(R.id.btnRegisterOnLogin);
 
         Boolean checkSession = db.sessionCheck("ada");
         if (checkSession == true) {
@@ -55,6 +56,15 @@ public class Login extends AppCompatActivity {
                 } else {
                     Toast.makeText(getApplicationContext(), "Login Failed, Username/Password is wrong.", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent registIntent = new Intent(Login.this, Register.class);
+                startActivity(registIntent);
+                finish();
             }
         });
     }

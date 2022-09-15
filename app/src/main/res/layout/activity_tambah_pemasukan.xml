@@ -90,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@id/btnSimpanPemasukan"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text=" << Kembali"
+        android:text="Kembali"
         android:backgroundTint="#D39327"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -16,52 +16,62 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/titleApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Financial Records"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-black"
-        android:textSize="30dp"
+        android:text="Financial Records"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/cashFlowIconImg"
+        android:textSize="30dp"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/cashFlowIconImg" />
 
     <EditText
         android:id="@+id/formUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/titleApp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:hint="Username"
-        />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleApp" />
 
     <EditText
         android:id="@+id/formPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/formUsername"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:hint="Password"
         android:inputType="textPassword"
-        />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formUsername" />
 
     <Button
         android:id="@+id/btnLoginOnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/formPassword"
+        android:backgroundTint="#FFC107"
         android:text="Login"
-        />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/formPassword" />
+
+    <Button
+        android:id="@+id/btnRegisterOnLogin"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginOnLogin" />
 
 </android.support.constraint.ConstraintLayout>
